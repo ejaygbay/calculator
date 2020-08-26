@@ -27,5 +27,5 @@ const deleteButton = () => {
 
 const equalButton = () => {
     let equal_value = eval(document.getElementById('screen').value);
-    equal_value === Infinity ? document.getElementById('screen').value = "Can't divide a number by 0" : document.getElementById('screen').value = equal_value;
+    equal_value === Infinity ? document.getElementById('screen').value = "Error" : document.getElementById('screen').value = equal_value;
 }

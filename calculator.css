@@ -1,9 +1,9 @@
 #calculator_frame {
-    background: #004d26;
+    background: #b3b3b3;
     width: 300px;
     text-align: center;
     height: 400px;
-    border: solid 10px #262626;
+    border: solid 6px #a6a6a6;
     border-radius: 50px;
 }
 
@@ -12,7 +12,23 @@
     height: 40px;
     margin-top: 6px;
     border-radius: 5px;
-    background: lightblue;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    background: #66d9ff !important;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #1ac6ff !important;
+    border-color: #1ac6ff !important;
 }
 
 #screen {
@@ -31,13 +47,13 @@ div {
 }
 
 .row {
-    background: skyblue;
     height: 100vh;
-    width: 100vw
+    width: 100vw;
+    background: #cce6ff;
 }
 
 @media screen and (min-width: 10px) and (max-width: 576px) {
-    body {
+    /* body {
         background: brown;
-    }
+    } */
 }

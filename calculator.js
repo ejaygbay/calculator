@@ -29,5 +29,5 @@ const deleteButton = () => {
 const equalButton = () => {
     let equal_value = eval(document.getElementById('screen').value);
 
-    equal_value === Infinity || isNaN(equal_value) ? document.getElementById('screen').value = "Error" : equal_value === undefined ? document.getElementById('screen').value = "" : document.getElementById('screen').value = equal_value;
+    equal_value === Infinity || equal_value === -Infinity || isNaN(equal_value) ? document.getElementById('screen').value = "Error" : equal_value === undefined ? document.getElementById('screen').value = "" : document.getElementById('screen').value = equal_value;
 }

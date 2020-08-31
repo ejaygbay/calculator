@@ -1,7 +1,10 @@
 let operators = ['+', '-', '*', '/', '.', '%'];
 
 const displayValue = (event) => {
-    document.getElementById('screen').value.length === 1 && event.target.value === '0' ? document.getElementById('screen').value = "0" : document.getElementById('screen').value += event.target.value;
+    let value = event.target.value;
+    let display_value = document.getElementById('screen').value;
+
+    display_value == '0' && value == '0' ? document.getElementById('screen').value = "0" : display_value == '0' && value > '0' ? document.getElementById('screen').value = value : document.getElementById('screen').value += value;
 }
 
 const getOperator = (event) => {

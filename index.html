@@ -5,60 +5,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My JavaScript Calculator</title>
-    <link rel="stylesheet" href="./library/bootstrap4.5.2.min.css">
     <link rel="stylesheet" type="text/css" href="calculator.css" />
+    <link rel="shortcut icon" href="./calculator.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-lg-3 col-md-2 col-sm-2 col-1"></div>
+    <section id="calculator_frame">
 
-        <div class="col-lg-6 col-md-8 col-sm-8 col-10">
-            <div id="calculator_frame">
+        <!--    screen  -->
+        <input id="screen" placeholder="0" disabled><br>
+        <!--    screen ends    -->
 
-                <!--    screen  -->
-                <input id="screen" placeholder="0" disabled><br>
-                <!--    screen ends    -->
+        <!--    buttons    -->
+        <input type="button" class="btn" value="7" onClick="displayValue(event)">
+        <input type="button" class="btn" value="8" onClick="displayValue(event)">
+        <input type="button" class="btn" value="9" onClick="displayValue(event)">
+        <input type="button" class="btn" value="/" onClick="getOperator(event)">
 
-                <!--    buttons    -->
-                <input type="button" class="btn btn-primary" value="7" onClick="displayValue(event)">
-                <input type="button" class="btn btn-primary" value="8" onClick="displayValue(event)">
-                <input type="button" class="btn btn-primary" value="9" onClick="displayValue(event)">
-                <input type="button" class="btn btn-primary" value="/" onClick="getOperator(event)">
+        <br>
 
-                <br>
+        <input type="button" class="btn" value="4" onClick="displayValue(event)">
+        <input type="button" class="btn" value="5" onClick="displayValue(event)">
+        <input type="button" class="btn" value="6" onClick="displayValue(event)">
+        <input type="button" class="btn" value="*" onClick="getOperator(event)">
 
-                <input type="button" class="btn btn-primary" value="4" onClick="displayValue(event)">
-                <input type="button" class="btn btn-primary" value="5" onClick="displayValue(event)">
-                <input type="button" class="btn btn-primary" value="6" onClick="displayValue(event)">
-                <input type="button" class="btn btn-primary" value="*" onClick="getOperator(event)">
+        <br>
 
-                <br>
+        <input type="button" class="btn" value="1" onClick="displayValue(event)">
+        <input type="button" class="btn" value="2" onClick="displayValue(event)">
+        <input type="button" class="btn" value="3" onClick="displayValue(event)">
+        <input type="button" class="btn" value="+" onClick="getOperator(event)">
 
-                <input type="button" class="btn btn-primary" value="1" onClick="displayValue(event)">
-                <input type="button" class="btn btn-primary" value="2" onClick="displayValue(event)">
-                <input type="button" class="btn btn-primary" value="3" onClick="displayValue(event)">
-                <input type="button" class="btn btn-primary" value="+" onClick="getOperator(event)">
+        <br>
 
-                <br>
+        <input type="button" class="btn" value="." onClick="getOperator(event)">
+        <input type="button" class="btn" value="0" onClick="displayValue(event)">
+        <input type="button" class="btn" value="%" onClick="getOperator(event)">
+        <input type="button" class="btn" value="-" onClick="getOperator(event)">
 
-                <input type="button" class="btn btn-primary" value="." onClick="getOperator(event)">
-                <input type="button" class="btn btn-primary" value="0" onClick="displayValue(event)">
-                <input type="button" class="btn btn-primary" value="%" onClick="getOperator(event)">
-                <input type="button" class="btn btn-primary" value="-" onClick="getOperator(event)">
+        <br>
 
-                <br>
-
-                <input type="button" class="btn btn-primary" value="C" onClick="clearButton()">
-                <input type="button" class="btn btn-primary" value="DEL" onClick="deleteButton()">
-                <input type="button" class="btn btn-primary" value="=" style="width:125px;" onClick="equalButton()">
-
-                <!--    buttons end    -->
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-2 col-sm-2 col-1"></div>
-    </div>
+        <input type="button" class="btn" value="C" onClick="clearButton()">
+        <input type="button" class="btn" value="DEL" onClick="deleteButton()">
+        <input type="button" class="btn" value="=" style="width:125px;" onClick="equalButton()">
+    </section>
 
     <script src="./calculator.js"></script>
 </body>
